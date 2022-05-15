@@ -6,12 +6,11 @@ class Main {
   main() : Object {
     {
 
-     x <- $4;
-     if (x != 3)
+     x <- 4;
+     if (x == 3)
     then y <- x
     else z <- x
     fI;
-
   }
   } ;
 } ;

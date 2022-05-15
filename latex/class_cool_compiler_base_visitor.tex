@@ -1,0 +1,159 @@
+\hypertarget{class_cool_compiler_base_visitor}{}\doxysection{Cool\+Compiler\+Base\+Visitor$<$ T $>$ Class Template Reference}
+\label{class_cool_compiler_base_visitor}\index{CoolCompilerBaseVisitor$<$ T $>$@{CoolCompilerBaseVisitor$<$ T $>$}}
+Inheritance diagram for Cool\+Compiler\+Base\+Visitor$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.441860cm]{class_cool_compiler_base_visitor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{class_cool_compiler_base_visitor_ad9e29ff3ffb8ff90547e7469690e1b15}{visit\+Program}} (Cool\+Compiler\+Parser.\+Program\+Context ctx)
+\item 
+T \mbox{\hyperlink{class_cool_compiler_base_visitor_a6ce4ecf96fe6c84937a46d62ceea9045}{visit\+Class\+\_\+name}} (Cool\+Compiler\+Parser.\+Class\+\_\+name\+Context ctx)
+\item 
+T \mbox{\hyperlink{class_cool_compiler_base_visitor_a722d11d067f8ea36f685264d61c47e9f}{visit\+Body}} (Cool\+Compiler\+Parser.\+Body\+Context ctx)
+\item 
+T \mbox{\hyperlink{class_cool_compiler_base_visitor_a34412edb92e7fbd95c0bc96922258eda}{visit\+Parm}} (Cool\+Compiler\+Parser.\+Parm\+Context ctx)
+\item 
+T \mbox{\hyperlink{class_cool_compiler_base_visitor_a871a704d8c168016079a6cacd0f9c8b4}{visit\+Expr}} (Cool\+Compiler\+Parser.\+Expr\+Context ctx)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides an empty implementation of \mbox{\hyperlink{interface_cool_compiler_visitor}{Cool\+Compiler\+Visitor}}, which can be extended to create a visitor which only needs to handle a subset of the available methods.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+T$>$} & The return type of the visit operation. Use \mbox{\hyperlink{}{Void}} for operations with no return type. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cool_compiler_base_visitor_a722d11d067f8ea36f685264d61c47e9f}\label{class_cool_compiler_base_visitor_a722d11d067f8ea36f685264d61c47e9f}} 
+\index{CoolCompilerBaseVisitor$<$ T $>$@{CoolCompilerBaseVisitor$<$ T $>$}!visitBody@{visitBody}}
+\index{visitBody@{visitBody}!CoolCompilerBaseVisitor$<$ T $>$@{CoolCompilerBaseVisitor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{visitBody()}{visitBody()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_cool_compiler_base_visitor}{Cool\+Compiler\+Base\+Visitor}}$<$ T $>$.visit\+Body (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Body\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Visit a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_a79dd335ef45abb7734005fd5eeb5bbd6}{Cool\+Compiler\+Parser\#body}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Implements \mbox{\hyperlink{interface_cool_compiler_visitor_a23a3bea55538cb7dfa74dae56d92843d}{Cool\+Compiler\+Visitor$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_cool_compiler_base_visitor_a6ce4ecf96fe6c84937a46d62ceea9045}\label{class_cool_compiler_base_visitor_a6ce4ecf96fe6c84937a46d62ceea9045}} 
+\index{CoolCompilerBaseVisitor$<$ T $>$@{CoolCompilerBaseVisitor$<$ T $>$}!visitClass\_name@{visitClass\_name}}
+\index{visitClass\_name@{visitClass\_name}!CoolCompilerBaseVisitor$<$ T $>$@{CoolCompilerBaseVisitor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{visitClass\_name()}{visitClass\_name()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_cool_compiler_base_visitor}{Cool\+Compiler\+Base\+Visitor}}$<$ T $>$.visit\+Class\+\_\+name (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Class\+\_\+name\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Visit a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_ae45e07880883df44af495772b7f953ae}{Cool\+Compiler\+Parser\#class\+\_\+name}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Implements \mbox{\hyperlink{interface_cool_compiler_visitor_af3bf22efc5e5e4f986863f30e29df3b7}{Cool\+Compiler\+Visitor$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_cool_compiler_base_visitor_a871a704d8c168016079a6cacd0f9c8b4}\label{class_cool_compiler_base_visitor_a871a704d8c168016079a6cacd0f9c8b4}} 
+\index{CoolCompilerBaseVisitor$<$ T $>$@{CoolCompilerBaseVisitor$<$ T $>$}!visitExpr@{visitExpr}}
+\index{visitExpr@{visitExpr}!CoolCompilerBaseVisitor$<$ T $>$@{CoolCompilerBaseVisitor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{visitExpr()}{visitExpr()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_cool_compiler_base_visitor}{Cool\+Compiler\+Base\+Visitor}}$<$ T $>$.visit\+Expr (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Expr\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Visit a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_ad503d2468b5bc2247940d74f96dd2176}{Cool\+Compiler\+Parser\#expr}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Implements \mbox{\hyperlink{interface_cool_compiler_visitor_a805d9e41a0e676dc990db07f97c47aff}{Cool\+Compiler\+Visitor$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_cool_compiler_base_visitor_a34412edb92e7fbd95c0bc96922258eda}\label{class_cool_compiler_base_visitor_a34412edb92e7fbd95c0bc96922258eda}} 
+\index{CoolCompilerBaseVisitor$<$ T $>$@{CoolCompilerBaseVisitor$<$ T $>$}!visitParm@{visitParm}}
+\index{visitParm@{visitParm}!CoolCompilerBaseVisitor$<$ T $>$@{CoolCompilerBaseVisitor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{visitParm()}{visitParm()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_cool_compiler_base_visitor}{Cool\+Compiler\+Base\+Visitor}}$<$ T $>$.visit\+Parm (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Parm\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Visit a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_ab31ad9742339c9d2967369be7046c04f}{Cool\+Compiler\+Parser\#parm}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Implements \mbox{\hyperlink{interface_cool_compiler_visitor_a9dd840d5d47d8080c1aca62d8843524e}{Cool\+Compiler\+Visitor$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_cool_compiler_base_visitor_ad9e29ff3ffb8ff90547e7469690e1b15}\label{class_cool_compiler_base_visitor_ad9e29ff3ffb8ff90547e7469690e1b15}} 
+\index{CoolCompilerBaseVisitor$<$ T $>$@{CoolCompilerBaseVisitor$<$ T $>$}!visitProgram@{visitProgram}}
+\index{visitProgram@{visitProgram}!CoolCompilerBaseVisitor$<$ T $>$@{CoolCompilerBaseVisitor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{visitProgram()}{visitProgram()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_cool_compiler_base_visitor}{Cool\+Compiler\+Base\+Visitor}}$<$ T $>$.visit\+Program (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Program\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Visit a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_a0666e3d06aa4c5f3978b4c8bf89a48a9}{Cool\+Compiler\+Parser\#program}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the visitor result
+\end{DoxyReturn}
+
+
+The default implementation returns the result of calling \mbox{\hyperlink{}{visit\+Children}} on
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ctx }
+\end{DoxyCode}
+ .
+
+Implements \mbox{\hyperlink{interface_cool_compiler_visitor_aa1f554ba6b02795f9ea6285f5e9ef384}{Cool\+Compiler\+Visitor$<$ T $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gen/\mbox{\hyperlink{_cool_compiler_base_visitor_8java}{Cool\+Compiler\+Base\+Visitor.\+java}}\end{DoxyCompactItemize}

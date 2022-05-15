@@ -1,0 +1,234 @@
+\hypertarget{class_cool_compiler_parser}{}\doxysection{Cool\+Compiler\+Parser Class Reference}
+\label{class_cool_compiler_parser}\index{CoolCompilerParser@{CoolCompilerParser}}
+Inheritance diagram for Cool\+Compiler\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cool_compiler_parser}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Body\+Context}
+\item 
+class {\bfseries Class\+\_\+name\+Context}
+\item 
+class {\bfseries Expr\+Context}
+\item 
+class {\bfseries Parm\+Context}
+\item 
+class {\bfseries Program\+Context}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_cool_compiler_parser_aab01809a3320d0c842b4f82fb712a043}{get\+Token\+Names}} ()
+\item 
+Vocabulary \mbox{\hyperlink{class_cool_compiler_parser_a554956ba879804d8d1f1cc28bbac5647}{get\+Vocabulary}} ()
+\item 
+String \mbox{\hyperlink{class_cool_compiler_parser_a2c5d48a96d3cdf8644bd5bbb5e630e59}{get\+Grammar\+File\+Name}} ()
+\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_cool_compiler_parser_a24db1a07081366fd6c2806abe56bfe5b}{get\+Rule\+Names}} ()
+\item 
+String \mbox{\hyperlink{class_cool_compiler_parser_a2c0555635c8826d66a33acefba899bca}{get\+Serialized\+A\+TN}} ()
+\item 
+A\+TN \mbox{\hyperlink{class_cool_compiler_parser_a142148cfd131beda0440907d25618162}{get\+A\+TN}} ()
+\item 
+\mbox{\hyperlink{class_cool_compiler_parser_a951d26900dc7ffb231dcab84b0ac4958}{Cool\+Compiler\+Parser}} (Token\+Stream input)
+\item 
+final Program\+Context \mbox{\hyperlink{class_cool_compiler_parser_a0666e3d06aa4c5f3978b4c8bf89a48a9}{program}} ()  throws Recognition\+Exception 
+\item 
+final Class\+\_\+name\+Context \mbox{\hyperlink{class_cool_compiler_parser_ae45e07880883df44af495772b7f953ae}{class\+\_\+name}} ()  throws Recognition\+Exception 
+\item 
+final Body\+Context \mbox{\hyperlink{class_cool_compiler_parser_a79dd335ef45abb7734005fd5eeb5bbd6}{body}} ()  throws Recognition\+Exception 
+\item 
+final Parm\+Context \mbox{\hyperlink{class_cool_compiler_parser_ab31ad9742339c9d2967369be7046c04f}{parm}} ()  throws Recognition\+Exception 
+\item 
+final Expr\+Context \mbox{\hyperlink{class_cool_compiler_parser_ad503d2468b5bc2247940d74f96dd2176}{expr}} ()  throws Recognition\+Exception 
+\item 
+boolean \mbox{\hyperlink{class_cool_compiler_parser_a4b9694c04b692bd19fc562b97dc9d440}{sempred}} (Rule\+Context \+\_\+localctx, int rule\+Index, int pred\+Index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{class_cool_compiler_parser_af4d48e8a49773b89d1637ffa9a5fe6bd}{C\+A\+SE}} =1
+\item 
+static final int \mbox{\hyperlink{class_cool_compiler_parser_aff80536c0c4f0471f03de69d67b607a6}{R\+U\+L\+E\+\_\+program}} = 0
+\item 
+static final String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_cool_compiler_parser_ad86c1b55d3d978ec99492aa9bc4a9aec}{rule\+Names}} = make\+Rule\+Names()
+\item 
+static final Vocabulary \mbox{\hyperlink{class_cool_compiler_parser_ac0734cd95c1727d77c64d52d1c62b384}{V\+O\+C\+A\+B\+U\+L\+A\+RY}} = new Vocabulary\+Impl(\+\_\+\+L\+I\+T\+E\+R\+A\+L\+\_\+\+N\+A\+M\+ES, \+\_\+\+S\+Y\+M\+B\+O\+L\+I\+C\+\_\+\+N\+A\+M\+ES)
+\item 
+static final String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_cool_compiler_parser_a9cdb5b11509e59619067a42b6aa320ad}{token\+Names}}
+\item 
+static final String \mbox{\hyperlink{class_cool_compiler_parser_a223079335ae36f3a5e02443baead8ded}{\+\_\+serialized\+A\+TN}}
+\item 
+static final A\+TN \mbox{\hyperlink{class_cool_compiler_parser_ab070ef3199d6cb4ea0e26d95385d0894}{\+\_\+\+A\+TN}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final D\+FA\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_cool_compiler_parser_a0525c7fa93fc7dcd8d1d66d40c1dc235}{\+\_\+decision\+To\+D\+FA}}
+\item 
+static final Prediction\+Context\+Cache \mbox{\hyperlink{class_cool_compiler_parser_abd114d19e5c5deacdb484cb345b76cd6}{\+\_\+shared\+Context\+Cache}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cool_compiler_parser_a951d26900dc7ffb231dcab84b0ac4958}\label{class_cool_compiler_parser_a951d26900dc7ffb231dcab84b0ac4958}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!CoolCompilerParser@{CoolCompilerParser}}
+\index{CoolCompilerParser@{CoolCompilerParser}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{CoolCompilerParser()}{CoolCompilerParser()}}
+{\footnotesize\ttfamily Cool\+Compiler\+Parser.\+Cool\+Compiler\+Parser (\begin{DoxyParamCaption}\item[{Token\+Stream}]{input }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cool_compiler_parser_a79dd335ef45abb7734005fd5eeb5bbd6}\label{class_cool_compiler_parser_a79dd335ef45abb7734005fd5eeb5bbd6}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!body@{body}}
+\index{body@{body}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{body()}{body()}}
+{\footnotesize\ttfamily final Body\+Context Cool\+Compiler\+Parser.\+body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Recognition\+Exception}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_ae45e07880883df44af495772b7f953ae}\label{class_cool_compiler_parser_ae45e07880883df44af495772b7f953ae}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!class\_name@{class\_name}}
+\index{class\_name@{class\_name}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{class\_name()}{class\_name()}}
+{\footnotesize\ttfamily final Class\+\_\+name\+Context Cool\+Compiler\+Parser.\+class\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Recognition\+Exception}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_ad503d2468b5bc2247940d74f96dd2176}\label{class_cool_compiler_parser_ad503d2468b5bc2247940d74f96dd2176}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!expr@{expr}}
+\index{expr@{expr}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{expr()}{expr()}}
+{\footnotesize\ttfamily final Expr\+Context Cool\+Compiler\+Parser.\+expr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Recognition\+Exception}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_a142148cfd131beda0440907d25618162}\label{class_cool_compiler_parser_a142148cfd131beda0440907d25618162}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!getATN@{getATN}}
+\index{getATN@{getATN}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{getATN()}{getATN()}}
+{\footnotesize\ttfamily A\+TN Cool\+Compiler\+Parser.\+get\+A\+TN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_a2c5d48a96d3cdf8644bd5bbb5e630e59}\label{class_cool_compiler_parser_a2c5d48a96d3cdf8644bd5bbb5e630e59}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!getGrammarFileName@{getGrammarFileName}}
+\index{getGrammarFileName@{getGrammarFileName}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{getGrammarFileName()}{getGrammarFileName()}}
+{\footnotesize\ttfamily String Cool\+Compiler\+Parser.\+get\+Grammar\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_a24db1a07081366fd6c2806abe56bfe5b}\label{class_cool_compiler_parser_a24db1a07081366fd6c2806abe56bfe5b}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!getRuleNames@{getRuleNames}}
+\index{getRuleNames@{getRuleNames}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{getRuleNames()}{getRuleNames()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} Cool\+Compiler\+Parser.\+get\+Rule\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_a2c0555635c8826d66a33acefba899bca}\label{class_cool_compiler_parser_a2c0555635c8826d66a33acefba899bca}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!getSerializedATN@{getSerializedATN}}
+\index{getSerializedATN@{getSerializedATN}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{getSerializedATN()}{getSerializedATN()}}
+{\footnotesize\ttfamily String Cool\+Compiler\+Parser.\+get\+Serialized\+A\+TN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_aab01809a3320d0c842b4f82fb712a043}\label{class_cool_compiler_parser_aab01809a3320d0c842b4f82fb712a043}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!getTokenNames@{getTokenNames}}
+\index{getTokenNames@{getTokenNames}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{getTokenNames()}{getTokenNames()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} Cool\+Compiler\+Parser.\+get\+Token\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_a554956ba879804d8d1f1cc28bbac5647}\label{class_cool_compiler_parser_a554956ba879804d8d1f1cc28bbac5647}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!getVocabulary@{getVocabulary}}
+\index{getVocabulary@{getVocabulary}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{getVocabulary()}{getVocabulary()}}
+{\footnotesize\ttfamily Vocabulary Cool\+Compiler\+Parser.\+get\+Vocabulary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_ab31ad9742339c9d2967369be7046c04f}\label{class_cool_compiler_parser_ab31ad9742339c9d2967369be7046c04f}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!parm@{parm}}
+\index{parm@{parm}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{parm()}{parm()}}
+{\footnotesize\ttfamily final Parm\+Context Cool\+Compiler\+Parser.\+parm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Recognition\+Exception}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_a0666e3d06aa4c5f3978b4c8bf89a48a9}\label{class_cool_compiler_parser_a0666e3d06aa4c5f3978b4c8bf89a48a9}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!program@{program}}
+\index{program@{program}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{program()}{program()}}
+{\footnotesize\ttfamily final Program\+Context Cool\+Compiler\+Parser.\+program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Recognition\+Exception}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_a4b9694c04b692bd19fc562b97dc9d440}\label{class_cool_compiler_parser_a4b9694c04b692bd19fc562b97dc9d440}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!sempred@{sempred}}
+\index{sempred@{sempred}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{sempred()}{sempred()}}
+{\footnotesize\ttfamily boolean Cool\+Compiler\+Parser.\+sempred (\begin{DoxyParamCaption}\item[{Rule\+Context}]{\+\_\+localctx,  }\item[{int}]{rule\+Index,  }\item[{int}]{pred\+Index }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cool_compiler_parser_ab070ef3199d6cb4ea0e26d95385d0894}\label{class_cool_compiler_parser_ab070ef3199d6cb4ea0e26d95385d0894}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!\_ATN@{\_ATN}}
+\index{\_ATN@{\_ATN}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{\_ATN}{\_ATN}}
+{\footnotesize\ttfamily final A\+TN Cool\+Compiler\+Parser.\+\_\+\+A\+TN\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{        \textcolor{keyword}{new} ATNDeserializer().deserialize(\mbox{\hyperlink{class_cool_compiler_parser_a223079335ae36f3a5e02443baead8ded}{\_serializedATN}}.toCharArray())}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cool_compiler_parser_a0525c7fa93fc7dcd8d1d66d40c1dc235}\label{class_cool_compiler_parser_a0525c7fa93fc7dcd8d1d66d40c1dc235}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!\_decisionToDFA@{\_decisionToDFA}}
+\index{\_decisionToDFA@{\_decisionToDFA}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{\_decisionToDFA}{\_decisionToDFA}}
+{\footnotesize\ttfamily final D\+FA \mbox{[}$\,$\mbox{]} Cool\+Compiler\+Parser.\+\_\+decision\+To\+D\+FA\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_a223079335ae36f3a5e02443baead8ded}\label{class_cool_compiler_parser_a223079335ae36f3a5e02443baead8ded}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!\_serializedATN@{\_serializedATN}}
+\index{\_serializedATN@{\_serializedATN}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{\_serializedATN}{\_serializedATN}}
+{\footnotesize\ttfamily final String Cool\+Compiler\+Parser.\+\_\+serialized\+A\+TN\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_abd114d19e5c5deacdb484cb345b76cd6}\label{class_cool_compiler_parser_abd114d19e5c5deacdb484cb345b76cd6}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!\_sharedContextCache@{\_sharedContextCache}}
+\index{\_sharedContextCache@{\_sharedContextCache}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{\_sharedContextCache}{\_sharedContextCache}}
+{\footnotesize\ttfamily final Prediction\+Context\+Cache Cool\+Compiler\+Parser.\+\_\+shared\+Context\+Cache\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{        \textcolor{keyword}{new} PredictionContextCache()}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cool_compiler_parser_af4d48e8a49773b89d1637ffa9a5fe6bd}\label{class_cool_compiler_parser_af4d48e8a49773b89d1637ffa9a5fe6bd}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!CASE@{CASE}}
+\index{CASE@{CASE}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{CASE}{CASE}}
+{\footnotesize\ttfamily final int Cool\+Compiler\+Parser.\+C\+A\+SE =1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_aff80536c0c4f0471f03de69d67b607a6}\label{class_cool_compiler_parser_aff80536c0c4f0471f03de69d67b607a6}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!RULE\_program@{RULE\_program}}
+\index{RULE\_program@{RULE\_program}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{RULE\_program}{RULE\_program}}
+{\footnotesize\ttfamily final int Cool\+Compiler\+Parser.\+R\+U\+L\+E\+\_\+program = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_ad86c1b55d3d978ec99492aa9bc4a9aec}\label{class_cool_compiler_parser_ad86c1b55d3d978ec99492aa9bc4a9aec}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!ruleNames@{ruleNames}}
+\index{ruleNames@{ruleNames}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{ruleNames}{ruleNames}}
+{\footnotesize\ttfamily final String \mbox{[}$\,$\mbox{]} Cool\+Compiler\+Parser.\+rule\+Names = make\+Rule\+Names()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_cool_compiler_parser_a9cdb5b11509e59619067a42b6aa320ad}\label{class_cool_compiler_parser_a9cdb5b11509e59619067a42b6aa320ad}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!tokenNames@{tokenNames}}
+\index{tokenNames@{tokenNames}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{tokenNames}{tokenNames}}
+{\footnotesize\ttfamily final String \mbox{[}$\,$\mbox{]} Cool\+Compiler\+Parser.\+token\+Names\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000002}{Deprecated}}]Use \mbox{\hyperlink{class_cool_compiler_parser_ac0734cd95c1727d77c64d52d1c62b384}{V\+O\+C\+A\+B\+U\+L\+A\+RY}} instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_cool_compiler_parser_ac0734cd95c1727d77c64d52d1c62b384}\label{class_cool_compiler_parser_ac0734cd95c1727d77c64d52d1c62b384}} 
+\index{CoolCompilerParser@{CoolCompilerParser}!VOCABULARY@{VOCABULARY}}
+\index{VOCABULARY@{VOCABULARY}!CoolCompilerParser@{CoolCompilerParser}}
+\doxysubsubsection{\texorpdfstring{VOCABULARY}{VOCABULARY}}
+{\footnotesize\ttfamily final Vocabulary Cool\+Compiler\+Parser.\+V\+O\+C\+A\+B\+U\+L\+A\+RY = new Vocabulary\+Impl(\+\_\+\+L\+I\+T\+E\+R\+A\+L\+\_\+\+N\+A\+M\+ES, \+\_\+\+S\+Y\+M\+B\+O\+L\+I\+C\+\_\+\+N\+A\+M\+ES)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gen/\mbox{\hyperlink{_cool_compiler_parser_8java}{Cool\+Compiler\+Parser.\+java}}\end{DoxyCompactItemize}

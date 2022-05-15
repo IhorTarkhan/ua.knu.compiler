@@ -1,6 +1,4 @@
-package org.example.compiler;
-
-import com.sun.jdi.event.MethodExitEvent;
+package org.example.compiler;//import com.sun.jdi.event.MethodExitEvent;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -14,8 +12,8 @@ import java.util.List;
 
 
 public class Lexer_IO {
-    private Lexer_grammar lexer;
-    private CommonTokenStream tokensStream;
+    private CoolCompilerLexer lexer;
+    public CommonTokenStream tokensStream;
     private List<Token> tokens;
     private List<Token> errors;
     private List<String> outputTokens;
@@ -28,7 +26,7 @@ public class Lexer_IO {
             throw new RuntimeException(e);
         }
 
-        lexer = new Lexer_grammar(charStream);
+        lexer = new CoolCompilerLexer(charStream);
         tokensStream = new CommonTokenStream(lexer);
         tokensStream.fill();
         tokens = tokensStream.getTokens();
@@ -53,7 +51,7 @@ public class Lexer_IO {
         }
 
         if ( errors.size() > 0 )
-                 printError() ;
+            printError() ;
     }
 
     public void writeTokens(String outputFile) {

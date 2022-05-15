@@ -1,0 +1,1 @@
+(program (class_name class Main { (body x : Int ;) (body y : Int ;) (body z : Int ;) (body main ( ) : Object { (expr { (expr x <- (expr 4)) ; (expr if (expr ( (expr (expr x) = (expr 3)) )) then (expr y <- (expr x)) else (expr z <- (expr x)) fI) ; }) } ;) } ;))

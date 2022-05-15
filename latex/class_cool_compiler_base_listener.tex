@@ -1,0 +1,244 @@
+\hypertarget{class_cool_compiler_base_listener}{}\doxysection{Cool\+Compiler\+Base\+Listener Class Reference}
+\label{class_cool_compiler_base_listener}\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+Inheritance diagram for Cool\+Compiler\+Base\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_cool_compiler_base_listener}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_cool_compiler_base_listener_abfdfb9f6eb628f02bd2fe8f0c33c9f90}{enter\+Program}} (Cool\+Compiler\+Parser.\+Program\+Context ctx)
+\item 
+void \mbox{\hyperlink{class_cool_compiler_base_listener_acd8846953699d7ee55545b21922967c4}{exit\+Program}} (Cool\+Compiler\+Parser.\+Program\+Context ctx)
+\item 
+void \mbox{\hyperlink{class_cool_compiler_base_listener_a8d905b67ad9e96e23fc08ee66e3e7d7c}{enter\+Class\+\_\+name}} (Cool\+Compiler\+Parser.\+Class\+\_\+name\+Context ctx)
+\item 
+void \mbox{\hyperlink{class_cool_compiler_base_listener_aee8ee35808f2633d4623d77f2c82f12e}{exit\+Class\+\_\+name}} (Cool\+Compiler\+Parser.\+Class\+\_\+name\+Context ctx)
+\item 
+void \mbox{\hyperlink{class_cool_compiler_base_listener_aaab7afd6c98b19d7a8e909d92643b708}{enter\+Body}} (Cool\+Compiler\+Parser.\+Body\+Context ctx)
+\item 
+void \mbox{\hyperlink{class_cool_compiler_base_listener_a966a3733c9339631fcb1032933c62b37}{exit\+Body}} (Cool\+Compiler\+Parser.\+Body\+Context ctx)
+\item 
+void \mbox{\hyperlink{class_cool_compiler_base_listener_ad11e92db310b80227df4f1039b7667c5}{enter\+Parm}} (Cool\+Compiler\+Parser.\+Parm\+Context ctx)
+\item 
+void \mbox{\hyperlink{class_cool_compiler_base_listener_ace7a3ee82e00f55b8d8e29e19ec200b4}{exit\+Parm}} (Cool\+Compiler\+Parser.\+Parm\+Context ctx)
+\item 
+void \mbox{\hyperlink{class_cool_compiler_base_listener_a49ea3e6fabbaee02a9c78349564f9ea0}{enter\+Expr}} (Cool\+Compiler\+Parser.\+Expr\+Context ctx)
+\item 
+void \mbox{\hyperlink{class_cool_compiler_base_listener_a5effa14a44a59a378ec9a66c40c411d5}{exit\+Expr}} (Cool\+Compiler\+Parser.\+Expr\+Context ctx)
+\item 
+void \mbox{\hyperlink{class_cool_compiler_base_listener_adbb63341fc366c337e9d72e75a2e0601}{enter\+Every\+Rule}} (Parser\+Rule\+Context ctx)
+\item 
+void \mbox{\hyperlink{class_cool_compiler_base_listener_a157a194bbf51c1b9e894033c5b2deade}{exit\+Every\+Rule}} (Parser\+Rule\+Context ctx)
+\item 
+void \mbox{\hyperlink{class_cool_compiler_base_listener_af4f64423285c3a4872e78c651a109b5e}{visit\+Terminal}} (Terminal\+Node node)
+\item 
+void \mbox{\hyperlink{class_cool_compiler_base_listener_a741841448651214bbeffd3bdf50ddb8d}{visit\+Error\+Node}} (Error\+Node node)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides an empty implementation of \mbox{\hyperlink{interface_cool_compiler_listener}{Cool\+Compiler\+Listener}}, which can be extended to create a listener which only needs to handle a subset of the available methods. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cool_compiler_base_listener_aaab7afd6c98b19d7a8e909d92643b708}\label{class_cool_compiler_base_listener_aaab7afd6c98b19d7a8e909d92643b708}} 
+\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}!enterBody@{enterBody}}
+\index{enterBody@{enterBody}!CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+\doxysubsubsection{\texorpdfstring{enterBody()}{enterBody()}}
+{\footnotesize\ttfamily void Cool\+Compiler\+Base\+Listener.\+enter\+Body (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Body\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Enter a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_a79dd335ef45abb7734005fd5eeb5bbd6}{Cool\+Compiler\+Parser\#body}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree\\
+\hline
+\end{DoxyParams}
+
+
+The default implementation does nothing.
+
+Implements \mbox{\hyperlink{interface_cool_compiler_listener_a2156ddc7e9341a0f4a6dc84325a16d91}{Cool\+Compiler\+Listener}}.
+
+\mbox{\Hypertarget{class_cool_compiler_base_listener_a8d905b67ad9e96e23fc08ee66e3e7d7c}\label{class_cool_compiler_base_listener_a8d905b67ad9e96e23fc08ee66e3e7d7c}} 
+\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}!enterClass\_name@{enterClass\_name}}
+\index{enterClass\_name@{enterClass\_name}!CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+\doxysubsubsection{\texorpdfstring{enterClass\_name()}{enterClass\_name()}}
+{\footnotesize\ttfamily void Cool\+Compiler\+Base\+Listener.\+enter\+Class\+\_\+name (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Class\+\_\+name\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Enter a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_ae45e07880883df44af495772b7f953ae}{Cool\+Compiler\+Parser\#class\+\_\+name}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree\\
+\hline
+\end{DoxyParams}
+
+
+The default implementation does nothing.
+
+Implements \mbox{\hyperlink{interface_cool_compiler_listener_a7a61f56d294df2d3f111ce060bc391b9}{Cool\+Compiler\+Listener}}.
+
+\mbox{\Hypertarget{class_cool_compiler_base_listener_adbb63341fc366c337e9d72e75a2e0601}\label{class_cool_compiler_base_listener_adbb63341fc366c337e9d72e75a2e0601}} 
+\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}!enterEveryRule@{enterEveryRule}}
+\index{enterEveryRule@{enterEveryRule}!CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+\doxysubsubsection{\texorpdfstring{enterEveryRule()}{enterEveryRule()}}
+{\footnotesize\ttfamily void Cool\+Compiler\+Base\+Listener.\+enter\+Every\+Rule (\begin{DoxyParamCaption}\item[{Parser\+Rule\+Context}]{ctx }\end{DoxyParamCaption})}
+
+The default implementation does nothing.\mbox{\Hypertarget{class_cool_compiler_base_listener_a49ea3e6fabbaee02a9c78349564f9ea0}\label{class_cool_compiler_base_listener_a49ea3e6fabbaee02a9c78349564f9ea0}} 
+\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}!enterExpr@{enterExpr}}
+\index{enterExpr@{enterExpr}!CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+\doxysubsubsection{\texorpdfstring{enterExpr()}{enterExpr()}}
+{\footnotesize\ttfamily void Cool\+Compiler\+Base\+Listener.\+enter\+Expr (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Expr\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Enter a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_ad503d2468b5bc2247940d74f96dd2176}{Cool\+Compiler\+Parser\#expr}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree\\
+\hline
+\end{DoxyParams}
+
+
+The default implementation does nothing.
+
+Implements \mbox{\hyperlink{interface_cool_compiler_listener_a17f8828b001f72eced84a276772e7329}{Cool\+Compiler\+Listener}}.
+
+\mbox{\Hypertarget{class_cool_compiler_base_listener_ad11e92db310b80227df4f1039b7667c5}\label{class_cool_compiler_base_listener_ad11e92db310b80227df4f1039b7667c5}} 
+\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}!enterParm@{enterParm}}
+\index{enterParm@{enterParm}!CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+\doxysubsubsection{\texorpdfstring{enterParm()}{enterParm()}}
+{\footnotesize\ttfamily void Cool\+Compiler\+Base\+Listener.\+enter\+Parm (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Parm\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Enter a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_ab31ad9742339c9d2967369be7046c04f}{Cool\+Compiler\+Parser\#parm}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree\\
+\hline
+\end{DoxyParams}
+
+
+The default implementation does nothing.
+
+Implements \mbox{\hyperlink{interface_cool_compiler_listener_abd80f77332c1bb9cd26a3e8122230503}{Cool\+Compiler\+Listener}}.
+
+\mbox{\Hypertarget{class_cool_compiler_base_listener_abfdfb9f6eb628f02bd2fe8f0c33c9f90}\label{class_cool_compiler_base_listener_abfdfb9f6eb628f02bd2fe8f0c33c9f90}} 
+\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}!enterProgram@{enterProgram}}
+\index{enterProgram@{enterProgram}!CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+\doxysubsubsection{\texorpdfstring{enterProgram()}{enterProgram()}}
+{\footnotesize\ttfamily void Cool\+Compiler\+Base\+Listener.\+enter\+Program (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Program\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Enter a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_a0666e3d06aa4c5f3978b4c8bf89a48a9}{Cool\+Compiler\+Parser\#program}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree\\
+\hline
+\end{DoxyParams}
+
+
+The default implementation does nothing.
+
+Implements \mbox{\hyperlink{interface_cool_compiler_listener_a9625bdda2d4db86d3f14c29350caff64}{Cool\+Compiler\+Listener}}.
+
+\mbox{\Hypertarget{class_cool_compiler_base_listener_a966a3733c9339631fcb1032933c62b37}\label{class_cool_compiler_base_listener_a966a3733c9339631fcb1032933c62b37}} 
+\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}!exitBody@{exitBody}}
+\index{exitBody@{exitBody}!CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+\doxysubsubsection{\texorpdfstring{exitBody()}{exitBody()}}
+{\footnotesize\ttfamily void Cool\+Compiler\+Base\+Listener.\+exit\+Body (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Body\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Exit a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_a79dd335ef45abb7734005fd5eeb5bbd6}{Cool\+Compiler\+Parser\#body}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree\\
+\hline
+\end{DoxyParams}
+
+
+The default implementation does nothing.
+
+Implements \mbox{\hyperlink{interface_cool_compiler_listener_a19a8cfc8f0b4553c8f831493cbfe4f82}{Cool\+Compiler\+Listener}}.
+
+\mbox{\Hypertarget{class_cool_compiler_base_listener_aee8ee35808f2633d4623d77f2c82f12e}\label{class_cool_compiler_base_listener_aee8ee35808f2633d4623d77f2c82f12e}} 
+\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}!exitClass\_name@{exitClass\_name}}
+\index{exitClass\_name@{exitClass\_name}!CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+\doxysubsubsection{\texorpdfstring{exitClass\_name()}{exitClass\_name()}}
+{\footnotesize\ttfamily void Cool\+Compiler\+Base\+Listener.\+exit\+Class\+\_\+name (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Class\+\_\+name\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Exit a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_ae45e07880883df44af495772b7f953ae}{Cool\+Compiler\+Parser\#class\+\_\+name}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree\\
+\hline
+\end{DoxyParams}
+
+
+The default implementation does nothing.
+
+Implements \mbox{\hyperlink{interface_cool_compiler_listener_a786b5e5c64a3617b797ec72533738598}{Cool\+Compiler\+Listener}}.
+
+\mbox{\Hypertarget{class_cool_compiler_base_listener_a157a194bbf51c1b9e894033c5b2deade}\label{class_cool_compiler_base_listener_a157a194bbf51c1b9e894033c5b2deade}} 
+\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}!exitEveryRule@{exitEveryRule}}
+\index{exitEveryRule@{exitEveryRule}!CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+\doxysubsubsection{\texorpdfstring{exitEveryRule()}{exitEveryRule()}}
+{\footnotesize\ttfamily void Cool\+Compiler\+Base\+Listener.\+exit\+Every\+Rule (\begin{DoxyParamCaption}\item[{Parser\+Rule\+Context}]{ctx }\end{DoxyParamCaption})}
+
+The default implementation does nothing.\mbox{\Hypertarget{class_cool_compiler_base_listener_a5effa14a44a59a378ec9a66c40c411d5}\label{class_cool_compiler_base_listener_a5effa14a44a59a378ec9a66c40c411d5}} 
+\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}!exitExpr@{exitExpr}}
+\index{exitExpr@{exitExpr}!CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+\doxysubsubsection{\texorpdfstring{exitExpr()}{exitExpr()}}
+{\footnotesize\ttfamily void Cool\+Compiler\+Base\+Listener.\+exit\+Expr (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Expr\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Exit a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_ad503d2468b5bc2247940d74f96dd2176}{Cool\+Compiler\+Parser\#expr}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree\\
+\hline
+\end{DoxyParams}
+
+
+The default implementation does nothing.
+
+Implements \mbox{\hyperlink{interface_cool_compiler_listener_aa8296db8120a43580a2ad3138129f2ef}{Cool\+Compiler\+Listener}}.
+
+\mbox{\Hypertarget{class_cool_compiler_base_listener_ace7a3ee82e00f55b8d8e29e19ec200b4}\label{class_cool_compiler_base_listener_ace7a3ee82e00f55b8d8e29e19ec200b4}} 
+\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}!exitParm@{exitParm}}
+\index{exitParm@{exitParm}!CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+\doxysubsubsection{\texorpdfstring{exitParm()}{exitParm()}}
+{\footnotesize\ttfamily void Cool\+Compiler\+Base\+Listener.\+exit\+Parm (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Parm\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Exit a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_ab31ad9742339c9d2967369be7046c04f}{Cool\+Compiler\+Parser\#parm}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree\\
+\hline
+\end{DoxyParams}
+
+
+The default implementation does nothing.
+
+Implements \mbox{\hyperlink{interface_cool_compiler_listener_afe90f1e15be78ef1ae9866f4efb22a9a}{Cool\+Compiler\+Listener}}.
+
+\mbox{\Hypertarget{class_cool_compiler_base_listener_acd8846953699d7ee55545b21922967c4}\label{class_cool_compiler_base_listener_acd8846953699d7ee55545b21922967c4}} 
+\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}!exitProgram@{exitProgram}}
+\index{exitProgram@{exitProgram}!CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+\doxysubsubsection{\texorpdfstring{exitProgram()}{exitProgram()}}
+{\footnotesize\ttfamily void Cool\+Compiler\+Base\+Listener.\+exit\+Program (\begin{DoxyParamCaption}\item[{Cool\+Compiler\+Parser.\+Program\+Context}]{ctx }\end{DoxyParamCaption})}
+
+Exit a parse tree produced by \mbox{\hyperlink{class_cool_compiler_parser_a0666e3d06aa4c5f3978b4c8bf89a48a9}{Cool\+Compiler\+Parser\#program}}. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & the parse tree\\
+\hline
+\end{DoxyParams}
+
+
+The default implementation does nothing.
+
+Implements \mbox{\hyperlink{interface_cool_compiler_listener_a66520ade61d68b8addc0156b6b642f26}{Cool\+Compiler\+Listener}}.
+
+\mbox{\Hypertarget{class_cool_compiler_base_listener_a741841448651214bbeffd3bdf50ddb8d}\label{class_cool_compiler_base_listener_a741841448651214bbeffd3bdf50ddb8d}} 
+\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}!visitErrorNode@{visitErrorNode}}
+\index{visitErrorNode@{visitErrorNode}!CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+\doxysubsubsection{\texorpdfstring{visitErrorNode()}{visitErrorNode()}}
+{\footnotesize\ttfamily void Cool\+Compiler\+Base\+Listener.\+visit\+Error\+Node (\begin{DoxyParamCaption}\item[{Error\+Node}]{node }\end{DoxyParamCaption})}
+
+The default implementation does nothing.\mbox{\Hypertarget{class_cool_compiler_base_listener_af4f64423285c3a4872e78c651a109b5e}\label{class_cool_compiler_base_listener_af4f64423285c3a4872e78c651a109b5e}} 
+\index{CoolCompilerBaseListener@{CoolCompilerBaseListener}!visitTerminal@{visitTerminal}}
+\index{visitTerminal@{visitTerminal}!CoolCompilerBaseListener@{CoolCompilerBaseListener}}
+\doxysubsubsection{\texorpdfstring{visitTerminal()}{visitTerminal()}}
+{\footnotesize\ttfamily void Cool\+Compiler\+Base\+Listener.\+visit\+Terminal (\begin{DoxyParamCaption}\item[{Terminal\+Node}]{node }\end{DoxyParamCaption})}
+
+The default implementation does nothing.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gen/\mbox{\hyperlink{_cool_compiler_base_listener_8java}{Cool\+Compiler\+Base\+Listener.\+java}}\end{DoxyCompactItemize}
