@@ -8,6 +8,7 @@ import java.sql.SQLOutput;
 
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
+import org.example.compiler.gen.CoolCompilerParser;
 
 /**
  * This class {@link Parser_IO} to deal with the input file, parse it and detect the parse error
