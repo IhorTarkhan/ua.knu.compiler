@@ -1,4 +1,5 @@
 package org.example.compiler;//import com.sun.jdi.event.MethodExitEvent;
+
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -21,7 +22,7 @@ public class Lexer_IO {
 
     public Lexer_IO(String fileName) {
         CharStream charStream;
-        try{
+        try {
             charStream = CharStreams.fromFileName(fileName);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -45,14 +46,14 @@ public class Lexer_IO {
                 } else {
                     outputTokens.add(Integer.toString(token.getLine()));
                     outputTokens.add(ruleNames[token.getType() - 1]);
-                    if ((ruleNames[token.getType()-1])=="ID")
+                    if ((ruleNames[token.getType() - 1]) == "ID")
                         outputTokens.add(token.getText());
                 }
             }
         }
 
-        if ( errors.size() > 0 )
-            printError() ;
+        if (errors.size() > 0)
+            printError();
     }
 
     public void writeTokens(String outputFile) {
@@ -66,8 +67,6 @@ public class Lexer_IO {
             throw new RuntimeException(e);
         }
     }
-
-
 
 
     public void printError() {
