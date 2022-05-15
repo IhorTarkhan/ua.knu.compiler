@@ -1,4 +1,5 @@
-package org.example.compiler.gen;// Generated from C:/Users/Abdullah alashry/IdeaProjects/Compiler/src\CoolCompiler.g4 by ANTLR 4.8
+package org.example.compiler.gen;
+// Generated from src/main/resources/CoolCompiler.g4 by ANTLR 4.7.2
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -10,7 +11,7 @@ import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class CoolCompilerLexer extends Lexer {
-	static { RuntimeMetaData.checkVersion("4.8", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.7.2", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =

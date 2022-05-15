@@ -3,10 +3,7 @@ package org.example.compiler;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.FileInputStream;
-import java.sql.SQLOutput;
 
-import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 import org.example.compiler.gen.CoolCompilerParser;
 

@@ -1,4 +1,5 @@
-package org.example.compiler.gen;// Generated from C:/Users/Abdullah alashry/IdeaProjects/Compiler/src\CoolCompiler.g4 by ANTLR 4.8
+package org.example.compiler.gen;
+// Generated from src/main/resources/CoolCompiler.g4 by ANTLR 4.7.2
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class CoolCompilerParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.8", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.7.2", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -99,7 +100,6 @@ public class CoolCompilerParser extends Parser {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
-
 	public static class ProgramContext extends ParserRuleContext {
 		public List<Class_nameContext> class_name() {
 			return getRuleContexts(Class_nameContext.class);
@@ -118,11 +118,6 @@ public class CoolCompilerParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CoolCompilerListener ) ((CoolCompilerListener)listener).exitProgram(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CoolCompilerVisitor ) return ((CoolCompilerVisitor<? extends T>)visitor).visitProgram(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -187,11 +182,6 @@ public class CoolCompilerParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CoolCompilerListener ) ((CoolCompilerListener)listener).exitClass_name(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CoolCompilerVisitor ) return ((CoolCompilerVisitor<? extends T>)visitor).visitClass_name(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -287,11 +277,6 @@ public class CoolCompilerParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CoolCompilerListener ) ((CoolCompilerListener)listener).exitBody(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CoolCompilerVisitor ) return ((CoolCompilerVisitor<? extends T>)visitor).visitBody(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -407,11 +392,6 @@ public class CoolCompilerParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CoolCompilerListener ) ((CoolCompilerListener)listener).exitParm(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CoolCompilerVisitor ) return ((CoolCompilerVisitor<? extends T>)visitor).visitParm(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final ParmContext parm() throws RecognitionException {
@@ -487,11 +467,6 @@ public class CoolCompilerParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof CoolCompilerListener ) ((CoolCompilerListener)listener).exitExpr(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof CoolCompilerVisitor ) return ((CoolCompilerVisitor<? extends T>)visitor).visitExpr(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
