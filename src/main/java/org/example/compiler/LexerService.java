@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 public class LexerService {
   public static final String DIVIDER = "\n";
 
-  public static LexerResult lexer(String inputFileData) {
+  public static LexerResult lex(String inputFileData) {
     CharStream charStream = CharStreams.fromString(inputFileData);
 
     CoolCompilerLexer lexer = new CoolCompilerLexer(charStream);

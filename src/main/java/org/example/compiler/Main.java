@@ -8,19 +8,20 @@ import java.util.List;
 
 import static java.nio.file.Files.readString;
 import static java.nio.file.Files.writeString;
-import static org.example.compiler.LexerService.lexer;
+import static org.example.compiler.LexerService.lex;
+import static org.example.compiler.ParserService.parse;
 
 public class Main {
   public static void main(String[] args) throws IOException {
     String inputFile = "good.cl";
     String inputFileData = readString(Path.of(inputFile));
 
-    LexerResult lexerResult = lexer(inputFileData);
+    LexerResult lexerResult = lex(inputFileData);
     printLexerErrors(lexerResult.errors());
     writeString(Path.of(inputFile + "-lex"), lexerResult.tokens());
 
-    Parser_IO parser = new Parser_IO(lexerResult.tokensStream());
-    parser.writeCST(inputFile + "-cst");
+    String parseResult = parse(lexerResult.tokensStream());
+    writeString(Path.of(inputFile + "-cst"), parseResult);
   }
 
   public static void printLexerErrors(List<Token> errors) {
