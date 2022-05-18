@@ -2,25 +2,24 @@ package org.example.compiler;
 
 import org.antlr.v4.runtime.Token;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
+import static java.nio.file.Files.readString;
+import static java.nio.file.Files.writeString;
 import static org.example.compiler.LexerService.lexer;
 
 public class Main {
   public static void main(String[] args) throws IOException {
     String inputFile = "good.cl";
-    String inputFileData = Files.readString(Path.of(inputFile));
+    String inputFileData = readString(Path.of(inputFile));
 
     LexerResult lexerResult = lexer(inputFileData);
     printLexerErrors(lexerResult.errors());
-    saveTokenToFile(lexerResult.tokens(), inputFile + "-lex");
+    writeString(Path.of(inputFile + "-lex"), lexerResult.tokens());
 
-    Parser_IO parser = new Parser_IO(lexerResult);
+    Parser_IO parser = new Parser_IO(lexerResult.tokensStream());
     parser.writeCST(inputFile + "-cst");
   }
 
@@ -33,16 +32,6 @@ public class Main {
         });
     if (!errors.isEmpty()) {
       System.exit(0);
-    }
-  }
-
-  public static void saveTokenToFile(String outputTokens, String outputFile) {
-    try {
-      BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
-      writer.write(outputTokens + "\n");
-      writer.close();
-    } catch (IOException e) {
-      throw new RuntimeException(e);
     }
   }
 }

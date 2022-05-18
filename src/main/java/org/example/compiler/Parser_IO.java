@@ -1,5 +1,6 @@
 package org.example.compiler;
 
+import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.example.compiler.gen.CoolCompilerParser;
 
@@ -10,8 +11,8 @@ import java.io.IOException;
 public class Parser_IO {
     public CoolCompilerParser coolParser;
 
-    public Parser_IO(LexerResult lexer) {
-        coolParser = new CoolCompilerParser(lexer.tokensStream());
+    public Parser_IO(CommonTokenStream tokenStream) {
+        coolParser = new CoolCompilerParser(tokenStream);
         coolParser.removeErrorListeners();
         coolParser.addErrorListener(ParsingErrorListener.ParsingErrorListenerObject);
     }
