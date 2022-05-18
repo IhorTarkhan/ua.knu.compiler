@@ -1,4 +1,4 @@
-package org.example.compiler;//import com.sun.jdi.event.MethodExitEvent;
+package org.example.compiler;
 
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
@@ -19,6 +19,7 @@ public class Lexer_IO {
     private List<Token> tokens;
     private List<Token> errors;
     private List<String> outputTokens;
+    private List<Token> outputTokens2;
 
     public Lexer_IO(String fileName) {
         CharStream charStream;
@@ -32,28 +33,32 @@ public class Lexer_IO {
         tokensStream = new CommonTokenStream(lexer);
         tokensStream.fill();
         tokens = tokensStream.getTokens();
-        lex();
-    }
-
-    private void lex() {
         outputTokens = new ArrayList<>();
         errors = new ArrayList<>();
         String[] ruleNames = lexer.getRuleNames();
         for (Token token : tokens) {
-            if (token.getType() > 0) {        //Not EOF
-                if (ruleNames[token.getType() - 1].equals("ERROR")) {
+            int type = token.getType();
+            int line = token.getLine();
+            String text = token.getText();
+            if (type > 0) {
+                if (ruleNames[type - 1].equals("ERROR")) {
                     errors.add(token);
                 } else {
-                    outputTokens.add(Integer.toString(token.getLine()));
-                    outputTokens.add(ruleNames[token.getType() - 1]);
-                    if ((ruleNames[token.getType() - 1]) == "ID")
-                        outputTokens.add(token.getText());
+                    outputTokens.add(Integer.toString(line));
+                    outputTokens.add(ruleNames[type - 1]);
+                    if ((ruleNames[type - 1]) == "ID") {
+                        outputTokens.add(text);
+                    }
                 }
             }
         }
 
         if (errors.size() > 0)
             printError();
+    }
+
+    public List<String> getTokens() {
+        return outputTokens;
     }
 
     public void writeTokens(String outputFile) {
@@ -70,13 +75,10 @@ public class Lexer_IO {
 
 
     public void printError() {
-
         for (Token errorToken : errors) {
-
-            System.out.print("\nlexical Error line Number :");
-            System.out.println(errorToken.getLine());
-            System.out.print("lexical Error Name :");
-            System.out.println(errorToken.getText());
+            System.err.println("lexical Error line Number :" + errorToken.getLine());
+            System.err.println("lexical Error Name :" + errorToken.getText());
+            System.err.println();
         }
         System.exit(0);
     }
