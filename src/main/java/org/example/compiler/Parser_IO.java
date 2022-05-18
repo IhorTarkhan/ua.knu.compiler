@@ -10,8 +10,8 @@ import java.io.IOException;
 public class Parser_IO {
     public CoolCompilerParser coolParser;
 
-    public Parser_IO(Lexer_IO lexer) {
-        coolParser = new CoolCompilerParser(lexer.tokensStream);
+    public Parser_IO(LexerResult lexer) {
+        coolParser = new CoolCompilerParser(lexer.tokensStream());
         coolParser.removeErrorListeners();
         coolParser.addErrorListener(ParsingErrorListener.ParsingErrorListenerObject);
     }
